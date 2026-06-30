@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudhanshu Tomar | Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+transition:.5s;
+}
+
+body.light{
+background:#f4f4f4;
+color:#222;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+position:sticky;
+top:0;
+background:#111827;
+}
+
+body.light header{
+background:white;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-weight:bold;
+}
+
+body.light nav a{
+color:black;
+}
+
+button{
+padding:8px 15px;
+cursor:pointer;
+border:none;
+border-radius:20px;
+background:#38bdf8;
+}
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+flex-direction:column;
+}
+
+.hero h1{
+font-size:55px;
+animation:slide 2s;
+}
+
+.hero p{
+margin-top:15px;
+font-size:22px;
+color:#38bdf8;
+}
+
+.hero a{
+margin-top:25px;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+margin-bottom:30px;
+text-align:center;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+}
+
+body.light .skill{
+background:white;
+}
+
+.progress{
+background:#ddd;
+height:10px;
+border-radius:20px;
+margin-top:10px;
+}
+
+.progress div{
+height:100%;
+background:#38bdf8;
+border-radius:20px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+transition:.4s;
+}
+
+body.light .card{
+background:white;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#111827;
+}
+
+body.light footer{
+background:#ddd;
+}
+
+@keyframes slide{
+from{
+opacity:0;
+transform:translateY(-60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>Sudhanshu</h2>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button onclick="theme()">🌙</button>
+
+</header>
+
+<div class="hero">
+
+<h1>Hello, I'm Sudhanshu Tomar</h1>
+
+<p>B.Tech AIML Student | Python Developer | Web Scraping Enthusiast</p>
+
+<a href="#projects">View Projects</a>
+
+</div>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p align="center">
+I am a B.Tech AIML student passionate about Python, Machine Learning, Flask Development, Web Scraping and Data Analysis. I love building real-world projects and continuously improving my development skills.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+Python
+<div class="progress">
+<div style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+Flask
+<div class="progress">
+<div style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+HTML/CSS
+<div class="progress">
+<div style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+Web Scraping
+<div class="progress">
+<div style="width:88%"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Goodreads Web Scraper</h3>
+<p>Scraped books, ratings and reviews using Python, Requests and BeautifulSoup.</p>
+</div>
+
+<div class="card">
+<h3>Hospital Data Scraper</h3>
+<p>Collected hospital details from multiple websites and exported structured datasets.</p>
+</div>
+
+<div class="card">
+<h3>Flask Portfolio</h3>
+<p>Responsive personal portfolio website built using Flask.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p align="center">
+📧 sudhanshu@example.com
+</p>
+
+<p align="center">
+💼 LinkedIn | GitHub
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Sudhanshu Tomar | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+function theme(){
+
+document.body.classList.toggle("light");
+
+}
+
+</script>
+
+</body>
+</html>

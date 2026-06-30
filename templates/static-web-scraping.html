@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Static Web Scraping Projects</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#081b29,#0f4c75,#0b132b);
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:#06141f;
+}
+
+nav h2{
+color:#00d4ff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:45px;
+color:#00d4ff;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+color:#ddd;
+}
+
+.container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+padding:50px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+border-radius:20px;
+padding:30px;
+text-align:center;
+transition:.4s;
+box-shadow:0 10px 20px rgba(0,0,0,.4);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+background:#12344d;
+
+}
+
+.card h2{
+
+color:#00d4ff;
+margin-bottom:15px;
+
+}
+
+.card p{
+
+margin-bottom:25px;
+color:#ddd;
+line-height:1.6;
+
+}
+
+.buttons{
+
+display:flex;
+justify-content:center;
+gap:15px;
+
+}
+
+.btn{
+
+padding:10px 22px;
+text-decoration:none;
+background:#00d4ff;
+color:black;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+}
+
+footer{
+
+margin-top:40px;
+padding:20px;
+background:#06141f;
+text-align:center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>📚 Static Web Scraping</h2>
+
+<a href="/webscraping">⬅ Back</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Static Web Scraping Projects</h1>
+
+<p>Select any project to view its scraped data or visit the original website.</p>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>📚 Goodreads</h2>
+
+<p>Book information scraped using Requests and BeautifulSoup.</p>
+
+<div class="buttons">
+
+<a href="/goodreads" class="btn">View Data</a>
+
+<a href="https://www.goodreads.com" target="_blank" class="btn">View Site</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🛒 Flipkart</h2>
+
+<p>Product details, ratings and prices scraped from Flipkart.</p>
+
+<div class="buttons">
+
+<a href="/flipkart" class="btn">View Data</a>
+
+<a href="https://www.flipkart.com" target="_blank" class="btn">View Site</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🎵 Spotify</h2>
+
+<p>Music and playlist information collected using Python.</p>
+
+<div class="buttons">
+
+<a href="/spotify" class="btn">View Data</a>
+
+<a href="https://open.spotify.com" target="_blank" class="btn">View Site</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🎬 Punjabi Movies</h2>
+
+<p>Movie names, ratings and release dates scraped automatically.</p>
+
+<div class="buttons">
+
+<a href="/punjabimovies" class="btn">View Data</a>
+
+<a href="https://punjabimania.com" target="_blank" class="btn">View Site</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📰 Hacker News</h2>
+
+<p>Latest technology news headlines scraped from Hacker News.</p>
+
+<div class="buttons">
+
+<a href="/hackernews" class="btn">View Data</a>
+
+<a href="https://news.ycombinator.com" target="_blank" class="btn">View Site</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+Developed by Sudhanshu Tomar | Flask Portfolio
+
+</footer>
+
+</body>
+</html>

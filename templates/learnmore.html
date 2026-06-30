@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Learn More</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(8px);
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+color:#d1d5db;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:50px;
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+border-radius:18px;
+padding:30px;
+text-align:center;
+transition:.4s;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.03);
+
+background:rgba(56,189,248,.15);
+
+}
+
+.icon{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.card h2{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.card p{
+line-height:1.6;
+color:#d1d5db;
+margin-bottom:25px;
+}
+
+.btn{
+
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#0284c7;
+
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:#111827;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<h2>📚 Learn More</h2>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+
+<li><a href="/portfolio">Portfolio</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Explore My Work</h1>
+
+<p>Select any category to know more about my projects.</p>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h2>Minor Project</h2>
+
+<p>
+Explore my B.Tech minor projects including
+problem statement, implementation,
+technology used and outcomes.
+</p>
+
+<a href="/webscraping" class="btn">Open Project</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🚀</div>
+
+<h2>Major Project</h2>
+
+<p>
+View my major project with architecture,
+dataset, AI/ML model, screenshots
+and future scope.
+</p>
+
+<a href="/webscraping" class="btn">Open Project</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🕸️</div>
+
+<h2>Web Scraping</h2>
+
+<p>
+Python web scraping using
+BeautifulSoup, Selenium,
+Requests and APIs with live examples.
+</p>
+
+<a href="/webscraping" class="btn">Open Project</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">📊</div>
+
+<h2>Data Analysis</h2>
+
+<p>
+Data visualization using
+Pandas, NumPy, Matplotlib
+and real-world datasets.
+</p>
+
+<a href="/webscraping" class="btn">Open Project</a>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Sudhanshu Tomar | Flask Portfolio
+
+</footer>
+
+</body>
+</html>

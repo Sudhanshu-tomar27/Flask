@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Data Hub</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f7fc;
+        }
+
+        nav{
+            background:#0d6efd;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            padding:18px 50px;
+            align-items:center;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:25px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .hero{
+            text-align:center;
+            padding:100px 20px;
+            background:linear-gradient(135deg,#0d6efd,#4facfe);
+            color:white;
+        }
+
+        .hero h1{
+            font-size:48px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            background:white;
+            color:#0d6efd;
+            padding:12px 25px;
+            border-radius:8px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .features{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            padding:60px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:300px;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+            text-align:center;
+        }
+
+        .card h3{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>My Smart Data Portal</h2>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/portfolio">portfolio</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>My Smart Data Portal</h1>
+    <p>Find hospital information quickly and efficiently.</p>
+
+    <a href="/portfolio" class="btn">
+    View Portfolio
+    </a>
+
+
+
+    <a href="/learnmore" class="btn" 
+    style="margin-left: 15px;">
+    Learn More
+    </a>
+
+</section>
+
+<section class="features">
+
+    <div class="card">
+        <h3>My Database</h3>
+        <p>Browse across different cities and states.</p>
+    </div>
+
+    <div class="card">
+        <h3>Location Search</h3>
+        <p>Search hospitals based on your preferred location.</p>
+    </div>
+
+    <div class="card">
+        <h3>Easy Access</h3>
+        <p>Fast, reliable and user-friendly interface.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Hospital Data Hub | Developed using Flask
+</footer>
+
+</body>
+</html>
